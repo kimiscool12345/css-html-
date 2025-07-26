@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #343a40;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center mt-5">
+        <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-img" />
+        <h1>Hello, I’m [tolu ]</h1>
+        <p class="lead">A passionate developer & designer.</p>
+    </header>
+
+    <main class="container mt-5">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I’m a web developer who loves building clean and functional websites. I specialize in frontend
+                development with HTML, CSS, JavaScript, and Bootstrap.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">A cool website built with Bootstrap and JavaScript.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">An interactive game made using HTML5 Canvas.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">A responsive portfolio website built with Bootstrap.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-5 mb-5">
+            <h2 class="section-title">Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Your name" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="your.email@example.com"
+                        required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="messageInput" class="form-label">Message</label>
+                    <textarea class="form-control" id="messageInput" rows="4" placeholder="Your message..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Your Name. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
